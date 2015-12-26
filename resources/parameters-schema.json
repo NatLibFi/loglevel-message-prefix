@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+	"prefixes": {
+	    "type": "array",
+	    "items": {
+		"type": "string",
+		"enum": [
+		    "timestamp",
+		    "level"
+		]
+	    },
+	    "default": [
+		"timestamp",
+		"level"
+	    ]
+	},
+	"staticPrefixes": {
+	    "type": "array",
+	    "items": {
+		"type": "string"
+	    },
+	    "default": []
+	},
+	"separator": {
+	    "type": "string",
+	    "default": " "
+	}
+    }
+}
