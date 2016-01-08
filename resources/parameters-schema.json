@@ -25,6 +25,27 @@
 	"separator": {
 	    "type": "string",
 	    "default": " "
+	},
+	"options": {
+	    "type": "object",
+	    "properties": {
+		"timestamp": {
+		    "locale": {
+			"type": "string"
+		    },
+		    "timezone": {
+			"type": "string"
+		    },
+		    "hour12": {
+			"type": "boolean"
+		    }
+		}
+	    },
+	    "default": {
+		"timestamp": {
+		    "hour12": false
+		}
+	    }
 	}
     }
 }

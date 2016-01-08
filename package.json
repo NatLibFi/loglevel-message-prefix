@@ -29,6 +29,7 @@
 	"es6-polyfills": "https://github.com/NatLibFi/es6-polyfills"
     },
     "devDependencies": {
+	"mockdate": ">=1.0.3 <1.1",
 	"chai": "^3.2.0",
 	"grunt": "^0.4.5",
 	"jshint": "^2.8.0",
