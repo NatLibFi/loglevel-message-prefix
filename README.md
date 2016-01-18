@@ -1,4 +1,4 @@
-# loglevel Message prefix plugin
+# loglevel Message prefix plugin [![NPM Version](https://img.shields.io/npm/v/loglevel-message-prefix.svg)](https://npmjs.org/package/loglevel-message-prefix) [![Build Status](https://travis-ci.org/NatLibFi/loglevel-message-prefix.svg)](https://travis-ci.org/NatLibFi/loglevel-message-prefix) [![Test Coverage](https://codeclimate.com/github/NatLibFi/loglevel-message-prefix/badges/coverage.svg)](https://codeclimate.com/github/NatLibFi/loglevel-message-prefix/coverage)
 
 Plugin for [loglevel](https://github.com/pimterry/loglevel) which allows defining prefixes for log messages
 
