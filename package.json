@@ -30,7 +30,7 @@
     "coverage": "istanbul cover _mocha",
     "check": "npm run lint && npm run test && npm run coverage",
     "travisci": "npm run check",
-    "publish-to-npm": "npm run check && npm publish"
+    "publish-to-npm": "npm install && npm run check && npm publish"
   },
   "dependencies": {
     "loglevel": "^1.4.0",
