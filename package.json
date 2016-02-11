@@ -1,55 +1,55 @@
 {
-    "name": "loglevel-message-prefix",
-    "description": "Plugin for loglevel which allows defining prefixes for log messages",
-    "author": {
-	"name": "The National Library of Finland"
-    },
-    "keywords": [
-	"log",
-	"logger",
-	"logging",
-	"browser",
-	"loglevel-plugin"
-    ],
-    "homepage": "https://github.com/NatLibFi/loglevel-message-prefix",
-    "bugs": {
-	"url": "https://github.com/NatLibFi/loglevel-message-prefix/issues"
-    },
-    "repository": {
-	"type": "git",
-	"url": "git@github.com:NatLibFi/loglevel-message-prefix.git"
-    },
-    "license": "MIT",
-    "version": "1.0.0",
-    "main": "./lib/main",
-    "scripts": {
-	"lint": "jshint .",
-	"test-nodejs": "mocha",
-	"test-browser": "karma start",
-	"test": "npm run test-nodejs && npm run test-browser",
-	"coverage": "istanbul cover _mocha",
-	"check": "npm run lint && npm run test && npm run coverage",
-	"travisci": "npm run check",
-	"publish-to-npm": "npm run check && npm publish"
-    },
-    "dependencies": {
-	"loglevel": "^1.4.0",
-	"jjv": ">=1.0.2 <1.2",
-	"jjve": "^0.5.1",
-	"es6-polyfills": "https://github.com/NatLibFi/es6-polyfills",
-	"requirejs-plugins": ">=1.0.2 <1.1"
-    },
-    "devDependencies": {
-	"mockdate": ">=1.0.3 <1.1",
-	"chai": "^3.2.0",
-	"jshint": "^2.8.0",
-	"mocha": "^2.3.2",
-	"istanbul": "^0.3.20",
-	"karma": "^0.13.19",
-	"karma-mocha": "^0.2.1",
-	"karma-requirejs": "^0.2.3",
-	"karma-phantomjs-launcher": "^0.2.3",
-	"phantomjs": "^1.9.19",
-	"codeclimate-test-reporter": "^0.1.1"
-    }
+  "name": "loglevel-message-prefix",
+  "description": "Plugin for loglevel which allows defining prefixes for log messages",
+  "author": {
+    "name": "The National Library of Finland"
+  },
+  "keywords": [
+    "log",
+    "logger",
+    "logging",
+    "browser",
+    "loglevel-plugin"
+  ],
+  "homepage": "https://github.com/NatLibFi/loglevel-message-prefix",
+  "bugs": {
+    "url": "https://github.com/NatLibFi/loglevel-message-prefix/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NatLibFi/loglevel-message-prefix.git"
+  },
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "./lib/main",
+  "scripts": {
+    "lint": "jshint .",
+    "test-nodejs": "mocha",
+    "test-browser": "karma start",
+    "test": "npm run test-nodejs && npm run test-browser",
+    "coverage": "istanbul cover _mocha",
+    "check": "npm run lint && npm run test && npm run coverage",
+    "travisci": "npm run check",
+    "publish-to-npm": "npm run check && npm publish"
+  },
+  "dependencies": {
+    "loglevel": "^1.4.0",
+    "jjv": ">=1.0.2 <1.2",
+    "jjve": "^0.5.1",
+    "es6-polyfills": "https://github.com/NatLibFi/es6-polyfills",
+    "requirejs-plugins": ">=1.0.2 <1.1"
+  },
+  "devDependencies": {
+    "mockdate": ">=1.0.3 <1.1",
+    "chai": "^3.2.0",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.2",
+    "istanbul": "^0.3.20",
+    "karma": "^0.13.19",
+    "karma-mocha": "^0.2.1",
+    "karma-requirejs": "^0.2.3",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "phantomjs": "^1.9.19",
+    "codeclimate-test-reporter": "^0.1.1"
+  }
 }

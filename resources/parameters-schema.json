@@ -1,51 +1,51 @@
 {
-    "type": "object",
-    "properties": {
-	"prefixes": {
-	    "type": "array",
-	    "items": {
-		"type": "string",
-		"enum": [
-		    "timestamp",
-		    "level"
-		]
-	    },
-	    "default": [
-		"timestamp",
-		"level"
-	    ]
-	},
-	"staticPrefixes": {
-	    "type": "array",
-	    "items": {
-		"type": "string"
-	    },
-	    "default": []
-	},
-	"separator": {
-	    "type": "string",
-	    "default": " "
-	},
-	"options": {
-	    "type": "object",
-	    "properties": {
-		"timestamp": {
-		    "locale": {
-			"type": "string"
-		    },
-		    "timezone": {
-			"type": "string"
-		    },
-		    "hour12": {
-			"type": "boolean"
-		    }
-		}
-	    },
-	    "default": {
-		"timestamp": {
-		    "hour12": false
-		}
-	    }
-	}
+  "type": "object",
+  "properties": {
+    "prefixes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "timestamp",
+          "level"
+        ]
+      },
+      "default": [
+        "timestamp",
+        "level"
+      ]
+    },
+    "staticPrefixes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "separator": {
+      "type": "string",
+      "default": " "
+    },
+    "options": {
+      "type": "object",
+      "properties": {
+        "timestamp": {
+          "locale": {
+            "type": "string"
+          },
+          "timezone": {
+            "type": "string"
+          },
+          "hour12": {
+            "type": "boolean"
+          }
+        }
+      },
+      "default": {
+        "timestamp": {
+          "hour12": false
+        }
+      }
     }
+  }
 }
