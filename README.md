@@ -86,9 +86,11 @@ The configuration object is passed as the second argument to the function. Follo
   - *timestamp*: Add locale-specific timestamp
   - *level*: Add log level prefix
 - **staticPrefixes**: An array of strings that should be added after dynamic prefixes (E.g. 'foo'). Defaults to none.
+- **prefixFormat**: A string template to format the prefix (``%p`` is replaced with the prefix). Defaults to `[%p]:
+`
 - **separator**: String used to separate prefixes. Defaults to single whitespace (` `).
 - **options**: Options for dynamic prefixes. Available options are:
-  - *timestamp*: An object of properties for date formatting. Available properties are: *locale*, *timezone* and *hour12*. Defaults to `{hour12: false}`-
+  - *timestamp*: An object of properties for date formatting. Available properties are: *locale*, *timezone* and *hour12*. Defaults to `{hour12: false}`
 
 The properties are defined the [schema file](https://github.com/NatLibFi/loglevel-message-prefix/blob/master/resources/parameters-schema.json).
 

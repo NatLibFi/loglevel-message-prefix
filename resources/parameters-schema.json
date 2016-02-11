@@ -21,10 +21,14 @@
         "type": "string"
       },
       "default": []
-    },
+    },    
     "separator": {
       "type": "string",
       "default": " "
+    },
+    "prefixFormat": {
+      "type": "string",
+      "default": "[%p]: "
     },
     "options": {
       "type": "object",
