@@ -12,6 +12,16 @@ Clone the sources and install the package (In the source directory) on command l
 npm install
 ```
 
+## Testing
+
+Run the following NPM script to lint, test and check coverage of the code:
+
+```javascript
+
+npm run check
+
+```
+
 #### AMD
 
 ```javascript
@@ -34,18 +44,6 @@ define(['loglevel', 'loglevel-message-prefix'], function(log, loglevelMessagePre
 
 var log = require('loglevel');
 var loglevelMessagePrefix = require('loglevel-message-prefix');
-
-loglevelMessagePrefix(log, {
-  staticPrefixes: ['foobar']
-});
-
-log.warn('TEST');
-
-```
-
-#### Browser globals
-
-```javascript
 
 loglevelMessagePrefix(log, {
   staticPrefixes: ['foobar']
