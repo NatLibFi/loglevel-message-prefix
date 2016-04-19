@@ -104,9 +104,17 @@ function factory(chai, log, Object, mock_date, loglevelMessagePrefix)
       loglevelMessagePrefix(logger, {
         prefixes: ['level']
       }, function() {
-        return function(msg)
+        return function()
         {
-          message = msg;
+          var args = [];
+          for (var i = 0; i < arguments.length; ++i) {
+              if (typeof arguments[i] === 'object') {
+                  args.push(JSON.stringify(arguments[i]));
+              } else {
+                  args.push(arguments[i].toString());
+              }
+          }
+          message = args.join('');
         };
       });
 
@@ -125,9 +133,17 @@ function factory(chai, log, Object, mock_date, loglevelMessagePrefix)
         prefixes: [],
         staticPrefixes: ['foo', 'bar']
       }, function() {
-        return function(msg)
+        return function()
         {
-          message = msg;
+          var args = [];
+          for (var i = 0; i < arguments.length; ++i) {
+              if (typeof arguments[i] === 'object') {
+                  args.push(JSON.stringify(arguments[i]));
+              } else {
+                  args.push(arguments[i].toString());
+              }
+          }
+          message = args.join('');
         };
       });
 
@@ -159,9 +175,17 @@ function factory(chai, log, Object, mock_date, loglevelMessagePrefix)
           }
         }
       }, function() {
-        return function(msg)
+        return function()
         {
-          message = msg;
+          var args = [];
+          for (var i = 0; i < arguments.length; ++i) {
+              if (typeof arguments[i] === 'object') {
+                  args.push(JSON.stringify(arguments[i]));
+              } else {
+                  args.push(arguments[i].toString());
+              }
+          }
+          message = args.join('');
         };
       });
 
@@ -170,6 +194,35 @@ function factory(chai, log, Object, mock_date, loglevelMessagePrefix)
       mock_date.reset();
 
       expect(message).to.equal('[' + timestamp + '/foobar]: TEST');
+
+    });
+
+    it("Should accepts variadic arguments", function() {
+
+      var messages,
+      logger = log.getLogger('foo');
+
+      loglevelMessagePrefix(logger, {
+        prefixes: ['level']
+      }, function() {
+        return function()
+        {
+          messages = arguments;
+        };
+      });
+
+      logger.warn(1, 'TEST', true);
+
+      expect(messages.length).to.equal(4);
+      expect(messages[0]).to.equal('[WARN]: ');
+      expect(messages[1]).to.equal(1);
+      expect(messages[2]).to.equal('TEST');
+      expect(messages[3]).to.equal(true);
+
+      logger.warn();
+
+      expect(messages.length).to.equal(1);
+      expect(messages[0]).to.equal('[WARN]: ');
 
     });
 
