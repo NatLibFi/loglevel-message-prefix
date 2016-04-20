@@ -20,7 +20,7 @@
     "url": "git@github.com:NatLibFi/loglevel-message-prefix.git"
   },
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "./lib/main",
   "scripts": {
     "lint": "jshint .",
