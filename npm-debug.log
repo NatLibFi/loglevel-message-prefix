@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'andreicek/loglevel-message-prefix' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData andreicek/loglevel-message-prefix
+8 silly fetchOtherPackageData andreicek/loglevel-message-prefix
+9 silly cache add args [ 'andreicek/loglevel-message-prefix', null ]
+10 verbose cache add spec andreicek/loglevel-message-prefix
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'andreicek/loglevel-message-prefix',
+11 silly cache add   scope: null,
+11 silly cache add   escapedName: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'andreicek/loglevel-message-prefix',
+11 silly cache add   spec: 'github:andreicek/loglevel-message-prefix',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:andreicek/loglevel-message-prefix.git',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/andreicek/loglevel-message-prefix.git',
+11 silly cache add      httpsUrl: 'git+https://github.com/andreicek/loglevel-message-prefix.git',
+11 silly cache add      gitUrl: 'git://github.com/andreicek/loglevel-message-prefix.git',
+11 silly cache add      shortcut: 'github:andreicek/loglevel-message-prefix',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/andreicek/loglevel-message-prefix/master/package.json' } }
+12 verbose addRemoteGit caching andreicek/loglevel-message-prefix
+13 verbose addRemoteGit andreicek/loglevel-message-prefix is a repository hosted by github
+14 silly tryGitProto attempting to clone git://github.com/andreicek/loglevel-message-prefix.git
+15 silly tryClone cloning andreicek/loglevel-message-prefix via git://github.com/andreicek/loglevel-message-prefix.git
+16 verbose tryClone git-github-com-andreicek-loglevel-message-prefix-git-6ef33932 not in flight; caching
+17 verbose correctMkdir /Users/andrei/.npm/_git-remotes correctMkdir not in flight; initializing
+18 info git [ 'clone',
+18 info git   '--template=/Users/andrei/.npm/_git-remotes/_templates',
+18 info git   '--mirror',
+18 info git   'git://github.com/andreicek/loglevel-message-prefix.git',
+18 info git   '/Users/andrei/.npm/_git-remotes/git-github-com-andreicek-loglevel-message-prefix-git-6ef33932' ]
+19 verbose mirrorRemote andreicek/loglevel-message-prefix git clone git://github.com/andreicek/loglevel-message-prefix.git
+20 verbose correctMkdir /Users/andrei/.npm/_git-remotes correctMkdir not in flight; initializing
+21 verbose setPermissions andreicek/loglevel-message-prefix set permissions on /Users/andrei/.npm/_git-remotes/git-github-com-andreicek-loglevel-message-prefix-git-6ef33932
+22 verbose resolveHead andreicek/loglevel-message-prefix original treeish: master
+23 info git [ 'rev-list', '-n1', 'master' ]
+24 silly resolveHead andreicek/loglevel-message-prefix resolved treeish: 8f3058de910e16d9d9711fd6b1907abb33f26ea9
+25 verbose resolveHead andreicek/loglevel-message-prefix resolved Git URL: git://github.com/andreicek/loglevel-message-prefix.git#8f3058de910e16d9d9711fd6b1907abb33f26ea9
+26 silly resolveHead Git working directory: /var/folders/jb/7p1z5rk92ls_bmxf3jgy7z5w0000gn/T/npm-81223-10ec7fcb/git-cache-1304c7d7/8f3058de910e16d9d9711fd6b1907abb33f26ea9
+27 info git [ 'clone',
+27 info git   '/Users/andrei/.npm/_git-remotes/git-github-com-andreicek-loglevel-message-prefix-git-6ef33932',
+27 info git   '/var/folders/jb/7p1z5rk92ls_bmxf3jgy7z5w0000gn/T/npm-81223-10ec7fcb/git-cache-1304c7d7/8f3058de910e16d9d9711fd6b1907abb33f26ea9' ]
+28 verbose cloneResolved andreicek/loglevel-message-prefix clone Cloning into '/var/folders/jb/7p1z5rk92ls_bmxf3jgy7z5w0000gn/T/npm-81223-10ec7fcb/git-cache-1304c7d7/8f3058de910e16d9d9711fd6b1907abb33f26ea9'...
+28 verbose cloneResolved done.
+29 info git [ 'checkout', '8f3058de910e16d9d9711fd6b1907abb33f26ea9' ]
+30 verbose checkoutTreeish andreicek/loglevel-message-prefix checkout Note: checking out '8f3058de910e16d9d9711fd6b1907abb33f26ea9'.
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+30 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+30 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+30 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish   git checkout -b <new-branch-name>
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish HEAD is now at 8f3058d... Use unix ms
+31 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+32 verbose updateSubmodules andreicek/loglevel-message-prefix submodule update
+33 verbose addLocalDirectory /Users/andrei/.npm/loglevel-message-prefix/1.1.1/package.tgz not in flight; packing
+34 verbose correctMkdir /Users/andrei/.npm correctMkdir not in flight; initializing
+35 verbose tar pack [ '/Users/andrei/.npm/loglevel-message-prefix/1.1.1/package.tgz',
+35 verbose tar pack   '/var/folders/jb/7p1z5rk92ls_bmxf3jgy7z5w0000gn/T/npm-81223-10ec7fcb/git-cache-1304c7d7/8f3058de910e16d9d9711fd6b1907abb33f26ea9' ]
+36 verbose tarball /Users/andrei/.npm/loglevel-message-prefix/1.1.1/package.tgz
+37 verbose folder /var/folders/jb/7p1z5rk92ls_bmxf3jgy7z5w0000gn/T/npm-81223-10ec7fcb/git-cache-1304c7d7/8f3058de910e16d9d9711fd6b1907abb33f26ea9
+38 verbose addLocalTarball adding from inside cache /Users/andrei/.npm/loglevel-message-prefix/1.1.1/package.tgz
+39 verbose correctMkdir /Users/andrei/.npm correctMkdir not in flight; initializing
+40 verbose addRemoteGit data._from: andreicek/loglevel-message-prefix
+41 verbose addRemoteGit data._resolved: git://github.com/andreicek/loglevel-message-prefix.git#8f3058de910e16d9d9711fd6b1907abb33f26ea9
+42 silly cache afterAdd loglevel-message-prefix@1.1.1
+43 verbose afterAdd /Users/andrei/.npm/loglevel-message-prefix/1.1.1/package/package.json not in flight; writing
+44 verbose correctMkdir /Users/andrei/.npm correctMkdir not in flight; initializing
+45 verbose afterAdd /Users/andrei/.npm/loglevel-message-prefix/1.1.1/package/package.json written
+46 silly install normalizeTree
+47 silly loadCurrentTree Finishing
+48 silly loadIdealTree Starting
+49 silly install loadIdealTree
+50 silly cloneCurrentTree Starting
+51 silly install cloneCurrentTreeToIdealTree
+52 silly cloneCurrentTree Finishing
+53 silly loadShrinkwrap Starting
+54 silly install loadShrinkwrap
+55 silly loadShrinkwrap Finishing
+56 silly loadAllDepsIntoIdealTree Starting
+57 silly install loadAllDepsIntoIdealTree
+58 silly rollbackFailedOptional Starting
+59 silly rollbackFailedOptional Finishing
+60 silly runTopLevelLifecycles Starting
+61 silly runTopLevelLifecycles Finishing
+62 silly install printInstalled
+63 verbose stack Error: Refusing to install loglevel-message-prefix as a dependency of itself
+63 verbose stack     at checkSelf (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:53:14)
+63 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+63 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+63 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+63 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/validate-args.js:16:5
+63 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+63 verbose stack     at Array.forEach (native)
+63 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+63 verbose stack     at Array.forEach (native)
+63 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+64 verbose cwd /Users/andrei/Code/loglevel-message-prefix
+65 error Darwin 15.6.0
+66 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "andreicek/loglevel-message-prefix"
+67 error node v6.3.1
+68 error npm  v3.10.3
+69 error code ENOSELF
+70 error Refusing to install loglevel-message-prefix as a dependency of itself
+71 error If you need help, you may report this error at:
+71 error     <https://github.com/npm/npm/issues>
+72 verbose exit [ 1, true ]
