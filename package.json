@@ -20,27 +20,27 @@
     "url": "git@github.com:NatLibFi/loglevel-message-prefix.git"
   },
   "license": "MIT",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "./lib/main",
   "scripts": {
     "lint": "jshint .",
-    "test-nodejs": "mocha",
+    "test-nodejs": "istanbul cover _mocha",
     "test-browser": "karma start",
     "test": "npm run test-nodejs && npm run test-browser",
-    "coverage": "istanbul cover _mocha",
+    "coverage": "istanbul check-coverage",
     "check": "npm run lint && npm run test && npm run coverage",
-    "travisci": "npm run check",
+    "travisci": "npm run test && npm run coverage",
     "publish-to-npm": "npm install && npm run check && npm publish"
   },
   "dependencies": {
     "loglevel": "^1.4.0",
-    "jjv": ">=1.0.2 <1.2",
+    "jjv": "^1.0.2",
     "jjve": "^0.5.1",
-    "es6-polyfills": "https://github.com/NatLibFi/es6-polyfills",
-    "requirejs-plugins": ">=1.0.2 <1.1"
+    "es6-polyfills": "^1.1.0",
+    "requirejs-plugins": "^1.0.2"
   },
   "devDependencies": {
-    "mockdate": ">=1.0.3 <1.1",
+    "mockdate": "^1.0.3",
     "chai": "^3.2.0",
     "jshint": "^2.8.0",
     "mocha": "^2.3.2",

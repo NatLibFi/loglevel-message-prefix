@@ -226,6 +226,33 @@ function factory(chai, log, Object, mock_date, loglevelMessagePrefix)
 
     });
 
+    it('Should pass context to the next plugin', function() {
+
+      var logger;
+
+      function mockPlugin(logger)
+      {
+
+        var fn_orig = logger.methodFactory;
+
+        logger.methodFactory = function()
+        {
+          return function()
+          {
+            expect(this).to.not.be.undefined /* jshint -W030 */;
+          };
+        };
+
+        return logger;
+
+      }
+      
+      logger = loglevelMessagePrefix(mockPlugin(log.getLogger('foobar')));
+      logger.error('foobar');      
+
+    });
+
+
   });
 
 }
