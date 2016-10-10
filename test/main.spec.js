@@ -84,17 +84,6 @@ function factory(chai, log, Object, mock_date, loglevelMessagePrefix)
 
     });
 
-    it('Should throw an error because of invalid configuration', function() {
-
-      var logger = log.getLogger('foo');
-
-      expect(function() {
-        loglevelMessagePrefix(logger, {
-          prefixes: 'foo'
-        });
-      }).to.throw(Error, /^Invalid configuration:/);
-
-    });
 
     it("Should only display a 'level' dynamic prefix", function() {
 

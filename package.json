@@ -34,10 +34,7 @@
   },
   "dependencies": {
     "loglevel": "^1.4.0",
-    "jjv": "^1.0.2",
-    "jjve": "^0.5.1",
-    "es6-polyfills": "^1.1.0",
-    "requirejs-plugins": "^1.0.2"
+    "es6-polyfills": "^1.1.0"
   },
   "devDependencies": {
     "mockdate": "^1.0.3",
