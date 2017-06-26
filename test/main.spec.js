@@ -34,7 +34,7 @@
   'use strict';
 
   if (typeof define === 'function' && define.amd) {
-    define(['chai', 'loglevel', 'es6-polyfills/lib/polyfills/object', 'mockdate', '../lib/main'], factory);
+    define(['chai/chai', 'loglevel', 'es6-polyfills/lib/polyfills/object', 'mockdate', '../lib/main'], factory);
   } else if (typeof module === 'object' && module.exports) {
     module.exports = factory(require('chai'), require('loglevel'), require('es6-polyfills/lib/polyfills/object'), require('mockdate'), require('../lib/main'));
   }

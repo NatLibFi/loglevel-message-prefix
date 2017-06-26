@@ -24,12 +24,13 @@
   "main": "./lib/main",
   "scripts": {
     "lint": "jshint .",
-    "test-nodejs": "istanbul cover _mocha",
-    "test-browser": "karma start",
+    "test-nodejs": "istanbul cover _mocha -- test/*.spec.js",
+    "test-browser": "npm run generate-requirejs-config && karma start",
     "test": "npm run test-nodejs && npm run test-browser",
     "coverage": "istanbul check-coverage",
     "check": "npm run lint && npm run test && npm run coverage",
     "travisci": "npm run test && npm run coverage",
+    "generate-requirejs-config": "requirejs-configurator --npm --include-dev-dependencies --exclude-peer-dependencies > test/browser-main.js",
     "publish-to-npm": "npm install && npm run check && npm publish"
   },
   "dependencies": {
@@ -42,10 +43,12 @@
     "jshint": "^2.8.0",
     "mocha": "^2.3.2",
     "istanbul": "^0.3.20",
-    "karma": "^0.13.19",
-    "karma-mocha": "^0.2.1",
-    "karma-requirejs": "^0.2.3",
-    "karma-phantomjs-launcher": "^0.2.3",
+    "karma": "^1.2.0",
+    "karma-mocha": "^1.1.1",
+    "karma-requirejs": "^1.0.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-requirejs-preprocessor": "^0.0.2",
+    "requirejs-configurator": "https://github.com/natlibfi-arlehiko/requirejs-configurator#peer-deps",
     "requirejs": "^2.3.3",
     "phantomjs": "^1.9.19",
     "codeclimate-test-reporter": "^0.1.1"

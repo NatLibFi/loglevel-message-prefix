@@ -3,14 +3,19 @@ module.exports = function(config) {
     singleRun: true,
     frameworks: ['mocha', 'requirejs'],
     browsers: ['PhantomJS'],
+    preprocessors: {
+      'test/browser-main.js': 'requirejs'
+    },
+    requirejsPreprocessor: {
+      config: {
+        baseUrl: '/base'
+      },
+      testRegexp: '^/base/test/.+\.spec\.js$'
+    },
     files: [
-      'test/browser/main.js',
+      'test/browser-main.js',
       {
         pattern: 'test/**/*.spec.js',
-        included: false
-      },
-      {
-        pattern: 'resources/**/*.json',
         included: false
       },
       {
