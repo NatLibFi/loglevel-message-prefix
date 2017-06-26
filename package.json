@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "loglevel": "^1.4.0",
-    "es6-polyfills": "^1.1.0"
+    "es6-polyfills": "^2.0.0"
   },
   "devDependencies": {
     "mockdate": "^1.0.3",
