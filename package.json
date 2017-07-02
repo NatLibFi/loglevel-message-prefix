@@ -1,5 +1,5 @@
 {
-  "name": "loglevel-message-prefix",
+  "name": "@natlibfi/loglevel-message-prefix",
   "description": "Plugin for loglevel which allows defining prefixes for log messages",
   "author": {
     "name": "The National Library of Finland"
@@ -20,7 +20,7 @@
     "url": "git@github.com:NatLibFi/loglevel-message-prefix.git"
   },
   "license": "MIT",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "./lib/main",
   "scripts": {
     "lint": "jshint .",
@@ -30,12 +30,12 @@
     "coverage": "istanbul check-coverage",
     "check": "npm run lint && npm run test && npm run coverage",
     "travisci": "npm run test && npm run coverage",
-    "generate-requirejs-config": "requirejs-configurator --npm --include-dev-dependencies --exclude-peer-dependencies > test/browser-main.js",
-    "publish-to-npm": "npm install && npm run check && npm publish"
+    "generate-requirejs-config": "requirejs-configurator --npm -D > test/browser-main.js",
+    "publish-to-npm": "npm install && npm run check && npm publish --access=public"
   },
   "dependencies": {
     "loglevel": "^1.4.0",
-    "es6-polyfills": "^2.0.0"
+    "@natlibfi/es6-polyfills": "^2.0.0"
   },
   "devDependencies": {
     "mockdate": "^1.0.3",
@@ -48,7 +48,7 @@
     "karma-requirejs": "^1.0.0",
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-requirejs-preprocessor": "^0.0.2",
-    "requirejs-configurator": "https://github.com/natlibfi-arlehiko/requirejs-configurator#peer-deps",
+    "requirejs-configurator": "https://github.com/natlibfi-arlehiko/requirejs-configurator#fix-peer-deps",
     "requirejs": "^2.3.3",
     "phantomjs": "^1.9.19",
     "codeclimate-test-reporter": "^0.1.1"
